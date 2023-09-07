@@ -1,11 +1,13 @@
 import React from 'react'
 
-function sponsor() {
+function Sponsor() {
   return (
-    <div>
-      <h1>Sponsor</h1>
-    </div>
+    <>
+     <div>
+        Hello
+     </div>
+    </>
   )
 }
 
-export default sponsor
+export default Sponsor;
