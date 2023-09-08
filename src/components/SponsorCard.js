@@ -21,7 +21,10 @@ return(
                               <p className="text-black text-lg text-justify font-semibold">{sponsor.sponsorAbout}</p>
                           </div>
                           <div className="flex items-center">
-                              <button className='button py-2 px-4 bg-[#00629b] text-white rounded-lg font-semibold'>Know More</button>
+                              {/*<button className='button py-2 px-4 bg-[#00629b] text-white rounded-lg font-semibold'>Know More</button>*/}
+                            <a href="/">
+                              <button type = "button" className='button py-2 px-4 bg-gradient-to-tl from-blue-950 to-blue-500 text-white rounded-lg font-semibold'>Read More</button>
+                            </a>
                           </div>
                       </div>
                   </div>
