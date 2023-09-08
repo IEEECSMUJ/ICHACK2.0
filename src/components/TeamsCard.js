@@ -12,7 +12,7 @@ const TeamsCard = () => {
                     <div>
                         <div className="relative overflow-hidden transition duration-300 transform rounded-xl shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                             <img
-                                className="object-cover w-full h-56 md:h-64 xl:h-80"
+                                className="object-cover w-full h-80 md:h-80 xl:h-80"
                                 src={teams.personImage}
                                 alt={teams.personName}
                             />
