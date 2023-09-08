@@ -1,34 +1,40 @@
 import React from 'react'
+import SponsorCard from "../components/SponsorCard";
 
 function Sponsor() {
   return (
     <>
-        <div className="max-w-sm w-full lg:max-w-full lg:flex">
-            <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style={{backgroundImage:
-                    "url('https://v1.tailwindcss.com/img/card-top.jpg')",}} title="Woman holding a mug">
+        <div className='flex justify-center bg-[#00629b] text-opacity-90 h-[10vh]'>
+            Navbar
+        </div>
+        <div className="flex flex-col items-center justify-center my-[2%]">
+            <div>
+                <h1 className="text-5xl font-bold m-8">
+                    SPONSORS
+                </h1>
             </div>
-            <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                <div className="mb-8">
-                    <p className="text-sm text-gray-600 flex items-center">
-                        <svg className="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                            <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-                        </svg>
-                        Members only
-                    </p>
-                    <div className="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-                    <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
-                </div>
-                <div className="flex items-center">
-                    <img className="w-10 h-10 rounded-full mr-4" src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Avatar of Jonathan Reinink"/>
-                        <div className="text-sm">
-                            <p className="text-gray-900 leading-none">Jonathan Reinink</p>
-                            <p className="text-gray-600">Aug 18</p>
-                        </div>
-                </div>
-            </div>
+            <SponsorCard/>
         </div>
     </>
   )
 }
 
 export default Sponsor;
+
+
+// <div className='flex flex-col items-center justify-center'>
+//     <div className="lg:max-w-full lg:flex relative z-10 px-[5%] py-4 rounded-2xl w-full max-w-full">
+//         <div className="lg:h-auto w-[50%] flex-none bg-no-repeat bg-contain bg-center text-center sm:h-48" style={{backgroundImage: `url('https://ic-hack.bmsceieee.com/assets/img/sponsor/SPS_Logo_Color_RGB.png')`}} title="Woman holding a mug">
+//         </div>
+//         <div className="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+//             <div className="mb-8">
+//                 <div className="text-gray-900 font-bold text-xl mb-2">IEEE Computer Society</div>
+//                 <p className="text-gray-700 text-base">The IEEE Computer Society is the premier source for information, inspiration, and collaboration in computer science and engineering. Connecting members worldwide, the Computer Society empowers the people who advance technology by delivering tools for individuals at all stages of their professional careers. Our trusted resources include international conferences, peer-reviewed publications, a robust digital library, globally recognized standards, and continuous learning opportunities.
+//                 </p>
+//             </div>
+//             <div className="flex items-center">
+//                 <button type='button' className='p-2 bg-[#00629b] border rounded-md text-white'>Know More</button>
+//             </div>
+//         </div>
+//     </div>
+// </div>
