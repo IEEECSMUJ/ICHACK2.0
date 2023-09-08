@@ -8,7 +8,7 @@ function track() {
     <>
         <div className='flex justify-center bg-cover bg-[#00629B] opacity-90 h-[10vh]'><h1 className='text-3xl'>NAVBAR</h1></div>
         <div className='px-[5%] py-[2%]'>
-            <div className='flex justify-center pb-[5vh]'><h1 className='text-6xl '>TRACKS</h1></div>
+            <div className='flex justify-center pb-[5vh]'><h1 className='text-6xl '>PROPOSED TRACKS</h1></div>
             <div></div>
             <div className='grid-rows-2 px-3 py-3 justify-around'>
                 <div className='opacity-90 pb-[10vh]'>
