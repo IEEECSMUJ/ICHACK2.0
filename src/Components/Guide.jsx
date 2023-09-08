@@ -2,9 +2,8 @@ import { Box, Button, styled, Typography } from "@mui/material";
 import React from "react";
 
 import buyIcon from "../media/register.png";
-import sellIcon from "../media/travel.png";
-import rentIcon from "../media/code.png";
-// import HowToRegIcon from '@mui/icons-material/HowToReg';
+import sellIcon from "../media/code.png";
+import rentIcon from "../media/travel.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import CustomButton from "./CustomButton";
 
@@ -76,8 +75,7 @@ const Guide = () => {
             textAlign: "center",
           }}
         >
-          Everything you need to know when you want to buy, rent or sell - All
-          in one place
+          Everything you need to know when you need to come, code - Flow of Hackathon
         </Typography>
       </CustomBox>
 
@@ -109,7 +107,7 @@ const Guide = () => {
             {/*>*/}
             {/*  How to buy*/}
             {/*</Typography>*/}
-            <ArrowRightAltIcon style={{ color: "#0689FF" }} />
+            {/*<ArrowRightAltIcon style={{ color: "#0689FF" }} />*/}
           </Box>
         </GuideBox>
 
@@ -140,7 +138,7 @@ const Guide = () => {
             {/*>*/}
             {/*  How to rent*/}
             {/*</Typography>*/}
-            <ArrowRightAltIcon style={{ color: "#0689FF" }} />
+            {/*<ArrowRightAltIcon style={{ color: "#0689FF" }} />*/}
           </Box>
         </GuideBox>
 
@@ -171,7 +169,7 @@ const Guide = () => {
             {/*>*/}
             {/*  How to sell*/}
             {/*</Typography>*/}
-            <ArrowRightAltIcon style={{ color: "#0689FF" }} />
+            {/*<ArrowRightAltIcon style={{ color: "#0689FF" }} />*/}
           </Box>
         </GuideBox>
       </GuidesBox>

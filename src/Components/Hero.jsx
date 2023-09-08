@@ -1,12 +1,21 @@
-import { Box, Button, styled, Typography } from "@mui/material";
-import { Container } from "@mui/system";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Box, Container, styled, Typography } from "@mui/material";
 import Navbar from "./Navbar";
-
 import heroImg from "../media/hero-new-image-removebg-preview.png";
 import CustomButton from "./CustomButton";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: "ease-in-out",
+      once: true, 
+    });
+    AOS.refresh(); 
+  }, []);
+
   const CustomBox = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "center",
@@ -29,8 +38,23 @@ const Hero = () => {
     },
   }));
 
+  const TextWithFadeRight = styled(Typography)(({ theme }) => ({
+    fontSize: "18px",
+    color: "#5A6473",
+    my: 4,
+    "&[data-aos='fade-right']": {
+      opacity: 0,
+      transform: "translateX(-20px)",
+      transition: "opacity 0.5s ease-out, transform 0.5s ease-out",
+    },
+    "&[data-aos='fade-right'].aos-animate": {
+      opacity: 1,
+      transform: "translateX(0)",
+    },
+  }));
+
   return (
-    <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "80vh" }}>
+    <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "100vh" }}>
       <Container>
         <Navbar />
         <CustomBox>
@@ -49,15 +73,23 @@ const Hero = () => {
               Welcome to IC HACKS - 2023
             </Typography>
             <Title variant="h1">
-             A hackathon where you'll love to compete.
+              A hackathon where you'll love to compete.
             </Title>
-            <Typography
+            <TextWithFadeRight
               variant="body2"
               sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
+              data-aos="fade-right" 
             >
-            Get a head start on the hottest hackathons before they go mainstream! 
-            Access exclusive coding competitions with a single search
-            </Typography>
+              Get a head start on the hottest hackathons before they go mainstream!
+              Access exclusive coding competitions with a single search.
+            </TextWithFadeRight>
+            {/* <TextWithFadeRight
+              variant="body2"
+              sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
+              data-aos="fade-right" 
+            >
+              Access exclusive coding competitions with a single search.
+            </TextWithFadeRight> */}
             <CustomButton
               backgroundColor="#0F1B4C"
               color="#fff"
@@ -71,6 +103,7 @@ const Hero = () => {
               src={heroImg}
               alt="heroImg"
               style={{ maxWidth: "100%", marginBottom: "2rem", marginTop: "5rem" }}
+              data-aos="fade-up" 
             />
           </Box>
         </CustomBox>
