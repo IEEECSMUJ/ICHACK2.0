@@ -10,7 +10,7 @@ function track() {
         <div className='px-[5%] py-[2%]'>
             <div className='flex justify-center pb-[5vh]'><h1 className='text-6xl '>TRACKS</h1></div>
             <div></div>
-            <div className='grid-rows-2 px-3 py-3'>
+            <div className='grid-rows-2 px-3 py-3 justify-around'>
                 <div className='opacity-90 pb-[10vh]'>
                     <div className='flex px-2.5'>
                         <h1 className='text-5xl pb-[5px]'>EDUCATION</h1>
