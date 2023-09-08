@@ -17,8 +17,8 @@ return(
                   <div className="max-w-full w-full lg:max-w-full lg:flex align-middle">
                       <div className="p-4 flex flex-col justify-between leading-normal align-middle">
                           <div className="mb-8 align-middle">
-                              <div className="text-gray-900 font-bold text-3xl mb-6">{sponsor.sponsorName}</div>
-                              <p className="text-gray-700 text-lg text-justify font-semibold">{sponsor.sponsorAbout}</p>
+                              <div className="text-black font-bold text-3xl mb-6">{sponsor.sponsorName}</div>
+                              <p className="text-black text-lg text-justify font-semibold">{sponsor.sponsorAbout}</p>
                           </div>
                           <div className="flex items-center">
                               <button className='button py-2 px-4 bg-[#00629b] text-white rounded-lg font-semibold'>Know More</button>
